@@ -1,5 +1,17 @@
-import React from "react";
+import { userSchema } from "@/zSchema/user";
 
 export default function Zodder() {
-  return <div>Zodder</div>;
+  const user = {
+    username: "wds",
+    age: 2,
+    remeber: true,
+  };
+  const validateField = userSchema.safeParse(user);
+  console.log(validateField);
+
+  return (
+    <>
+      <div>Zodder</div>
+    </>
+  );
 }
