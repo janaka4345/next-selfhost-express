@@ -51,7 +51,7 @@ export default function page() {
     <>
       <button onClick={handleClick}>post data</button>
       <div className="flex flex-row justify-between ">
-        <pre className="border border-red-500 w-1/2">
+        <pre className="border border-red-500 w-1/2 ">
           {JSON.stringify(data, null, 2)}
         </pre>
         <pre className="border border-red-500 w-1/2">
