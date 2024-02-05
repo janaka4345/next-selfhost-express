@@ -5,6 +5,8 @@ export const userRouter = router({
     userList: publicProcedure
         .query(async () => {
             const allUsers = await prisma.user.findMany()
+            console.log('ran');
             console.log(allUsers)
+            return allUsers
         }),
 });
