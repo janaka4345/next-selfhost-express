@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "server.js",
+        "server/trpc/index.js"
+    ],
+    "exec": "server.js",
+    "ext": "js ts",
+    "stdin": false
+}
