@@ -16,5 +16,21 @@ export const appRouter = router({
             console.log(allUsers)
             return allUsers
         }),
-    users: userRouter
+    users: userRouter,
+    // createUser: publicProcedure
+    //     .query(async () => {
+    //         await prisma.user.create({
+    //             data: {
+    //                 name: 'Alice',
+    //                 email: 'alice@prisma.io',
+    //                 posts: {
+    //                     create: { title: 'Hello World' },
+    //                     profile: {
+    //                         create: { bio: 'I like turtles' },
+    //                     },
+    //                 },
+    //             })
+    //     }),
 });
+
+
